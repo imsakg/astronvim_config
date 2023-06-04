@@ -4,6 +4,12 @@ return {
     -- config variable is the default configuration table for the setup function call
     -- local null_ls = require "null-ls"
 
+    require("null-ls").setup({
+      on_init = function(new_client, _)
+        new_client.offset_encoding = 'utf-16'
+      end,
+    })
+
     -- Check supported formatters and linters
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
