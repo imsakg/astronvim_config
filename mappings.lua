@@ -5,7 +5,7 @@
 -- automatically pick-up stored data by this setting.)
 return {
   -- first key is the mode
-  n = {
+  n = { -- normal mode
     -- second key is the lefthand side of the map
 
     -- navigate buffer tabs with `H` and `L`
@@ -33,8 +33,11 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
-  t = {
+  t = { -- terminal mode
     -- setting a mapping to false will disable it
+    -- ["<esc>"] = false,
+  },
+  v = { -- visual mode
     -- ["<esc>"] = false,
   },
 }
