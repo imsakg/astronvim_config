@@ -25,7 +25,7 @@ return {
       },
     },
   },
-  { import = "astrocommunity.colorscheme.nightfox",      enabled = false },
+  { import = "astrocommunity.colorscheme.nightfox", enabled = false },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   {
     -- further customize the options set by the community
@@ -104,21 +104,23 @@ return {
   },
 
   { import = "astrocommunity.code-runner.overseer-nvim" },
+  { import = "astrocommunity.code-runner.compiler-nvim" },
 
+  { import = "astrocommunity.editing-support.suda-vim" },
   -- Personal Extensions
   {
     "wakatime/vim-wakatime",
-    lazy = false
+    lazy = false,
   },
 
   {
-    "frazrepo/vim-rainbow"
+    "frazrepo/vim-rainbow",
   },
 
   {
     "mg979/vim-visual-multi",
     version = master,
-    lazy = false
+    lazy = false,
   },
 
   "PotatoesMaster/i3-vim-syntax",
